@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Login</title>
+</head>
+<body>
+<H1>Welcome to Shiro</H1>
+<h4 style="color: red;" th:text="${msg}"></h4>
+<form th:action="@{/login}" method="post">
+    <p>Username： <input type="text" name="uname" autofocus="autofocus"/></p>
+    <p>Password： <input type="password" name="pwd"/></p>
+    <p><input type="submit" value="Log In"/></p>
+</form>
+</body>
+</html>
